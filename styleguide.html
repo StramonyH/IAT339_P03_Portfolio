@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <title>H.T CAKE</title>
+
+    <link href="css/styleguide.css" rel="stylesheet">
+    <!-- <link href="css/normalize.css" rel="stylesheet"> -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&family=Roboto+Slab&display=swap" rel="stylesheet">
+
+  </head>
+
+  <body>
+    <header>
+      <h1>H.G Portfolio</h1>
+
+      <nav class="nav">
+        <a href="#interactive_elements">Interactive Elements</a>
+        <a href="#text_elements">Text Elements</a>
+        <a href="#combined_elements">Combined Elements</a>
+        <a href="product_list.html">Product Listing Template</a>
+        <a href="checkout.html">Checkout Template</a>
+        <a href="#citations">Citations</a>
+      </nav>
+
+    </header>
+
+    <!-- INTERACTIVE ELEMENTS SECTION // -->
+    <section id="interactive_elements">
+      <h2>Interactive Elements</h2>
+
+        <section class="element">
+          <h3>In-text link</h3>
+
+            <h4>CSS selector:</h4>
+              <p>a</p>
+              <p>a.intext</p>
+
+            <h4> Sample code:</h4>
+              <code>&lt;a class="intext-link"&gt;UI design&lt;/a&gt;</code>
+
+            <h4>Rendered element:</h4>
+              <a class="intext" href="#">UI design</a>
+        </section>
+
+
+
+      <!-- Navigation Link styling section -->
+      <section class="element">
+
+        <h3>Navigation Link</h3>
+
+        <h4>CSS selector:</h4>
+        <p>.navigationBar a</p>
+        <p>.navigationBar a hover</p>
+
+        <h4>Sample code:</h4>
+        <!--<code>&lt;a href="#" class="button"&gt;Default Button&lt;/a&gt;</code>-->
+          <code>&lt;nav&gt;
+            &lt;a href="#Home"&gt;Home&lt;/a&gt;
+            &lt;a href="#Works"&gt;Works&lt;/a&gt;
+            &lt;nav&gt;
+          </code>
+
+        <h4>Rendered element:</h4>
+        <!--<a class="button-nav" href="#">Default Button</a>-->
+        <div class="navigationBar">
+          <nav>
+            <a href="#Home">Home</a>
+            <a href="#Works">Works</a>
+          </nav>
+        </div>
+
+      </section>
+
+
+      <section class="element">
+        <h3>Submit/Reset Buttons</h3>
+
+        <h4>CSS selector:</h4>
+          <p>.submit-btn</p>
+          <p>.reset:hover, .submit:hover, .checkout:hover</p>
+          <p>.reset:focus, .submit:focus, .checkout:focus</p>
+
+        <h4>Sample code:</h4>
+          <code>
+            &lt;form&gt;
+            &lt;button class="submit"&gt;&lt;SUBMIT&gt;&lt;/button&gt;
+            &lt;button class="reset"&gt;&lt;RESET&gt;&lt;/button&gt;
+            &lt;/form&gt;
+          </code>
+
+        <h4>Rendered element:</h4>
+            <div class="submit-btn">
+              <button class="submit" type="submit">SUBMIT</button>
+              <button class="reset" type="reset">RESET</button>
+            </div>
+      </section>
+
+
+      <section class="element">
+        <h3>Text Input Field with Label</h3>
+
+        <h4>CSS selector:</h4>
+          <p>fieldset</p>
+          <p>.search</p>
+
+        <h4>Sample code:</h4>
+          <code>
+            &lt;fieldset class="search"&gt;
+            &lt;fieldset&gt;&lt;Email&gt;&lt;/fieldset&gt;
+            &lt;input type="text" value=""/ placeholder="Email"&gt;
+          </code>
+
+        <h4>Rendered element:</h4>
+            <fieldset class="search">
+              <label> Email </label> <input type="text" placeholder="search" value=""/>
+            </fieldset>
+      </section>
+
+
+      <section class="element">
+        <h3>Radio Button with Label</h3>
+
+        <h4>CSS selector:</h4>
+          <p>label.room</p>
+          <p>label.room input</p>
+          <p>span.room</p>
+          <p>label.room:hover input ~ span.room</p>
+          <p>span.room:after</p>
+          <p>label.room input:checked ~ span.room:after</p>
+          <p>label.room span.room:after</p>
+
+        <h4>Sample code:</h4>
+          <code>
+            &lt;label class="design"&gt;UI Design&lt;input type="checkbox"&gt;
+            &lt;span class="design"&gt;&lt;/span&gt;&lt;/label&gt;
+            &lt;label class="design"&gt;UX Design&lt;input type="checkbox"&gt;
+            &lt;span class="design"&gt;&lt;/span&gt;&lt;/label&gt;
+          </code>
+
+        <h4>Rendered element:</h4>
+          <div class="radion-button">
+            <h4>Design</h4>
+            <label class="design">UI Design
+              <input type="checkbox">
+              <span class="design"></span>
+            </label>
+
+            <label class="design">UX Design
+              <input type="checkbox">
+              <span class="design"></span>
+            </label>
+
+          </div>
+      </section>
+
+
+      <section class="element">
+        <h3>Image as a Link</h3>
+
+        <h4>CSS selector:</h4>
+        <p>.furniture_design</p>
+        <p>.image</p>
+        <p>.img_effect</p>
+        <p>.text</p>
+
+        <h4>Sample code:</h4>
+          <code>
+            &lt;div class="furniture_design"&gt;
+            &lt;div class="img"&gt;
+            &lt;a href&gt;&lt;img src="images/studyTable.jpg" &gt;&lt;/a&gt;
+            &lt;div class="img_effect&gt;
+            &lt;div class="text"&gt;&lt;a  href&gt;Learn More&lt;/a&gt;&lt;/a&gt;
+            &lt;/div&gt;
+            &lt;/div&gt;
+            &lt;/div&gt;
+          </code>
+
+        <h4>Rendered element:</h4>
+          <div class="header">
+            <div class="img">
+               <a  href="#"> <img class="image" src="img/header.jpg" alt="this is a design picture."></a>
+             </div>
+         </div>
+      </section>
+
+
+    </section>
+    <!-- // INTERACTIVE ELEMENTS SECTION -->
+
+    <!-- TEXT ELEMENTS SECTION // -->
+    <section id="text-elements">
+      <h2>Text Elements</h2>
+
+      <section class="element">
+        <h3>Headings</h3>
+
+        <h4>CSS selector:</h4>
+          <p>h3</p>
+          <p>h4</p>
+          <p>h5</p>
+          <p>h6</p>
+
+        <h4>Sample code:</h4>
+          <code>
+            &lt;h3&gt;Heading 3&lt;/h3&gt;
+            &lt;h4&gt;Heading 4&lt;/h4&gt;
+            &lt;h5&gt;Heading 5&lt;/h5&gt;
+            &lt;h6&gt;Heading 6&lt;/h6&gt;
+          </code>
+
+        <h4>Rendered element:</h4>
+          <h3>Heading 3</h3>
+          <h4>Heading 4</h4>
+          <h5>Heading 5</h5>
+          <h6>Heading 6</h6>
+      </section>
+
+      <section class="element">
+        <h3>Paragraphs</h3>
+
+        <h4>CSS selector:</h4>
+          <p>.paragraphs p</p>
+
+        <h4>Sample code:</h4>
+          <code>
+            &lt;p&gt;My name is Hana, I am a UI designer. With the development of interaction design and the Internet, I convey information to the audience through design,
+              so I became a visual story introducer. Technology, art and information can be seen everywhere, I hope to combine them to create a better-looking and
+              practical work to show, and change the traditional website and information sharing.&lt;/p&gt;
+           </code>
+
+        <h4>Rendered elements:</h4>
+          <div class="paragraphs">
+            <p>Bio</p>
+            <p>My name is Hana, I am a UI designer. With the development of interaction design and the Internet, I convey information to the audience through design,
+              so I became a visual story introducer. Technology, art and information can be seen everywhere, I hope to combine them to create a better-looking and
+              practical work to show, and change the traditional website and information sharing.</p>
+          </div>
+
+      </section>
+
+      <section class="element">
+        <h3>Numbered Lists</h3>
+
+        <h4>CSS selector:</h4>
+          <p>ol</p>
+          <p>li</p>
+
+        <h4>Sample code:</h4>
+          <code>
+            &lt;ol&gt;
+            &lt;li&gt;sofa&lt;/li&gt;
+            &lt;/ol&gt;
+          </code>
+
+        <h4>Rendered elements:</h4>
+          <ol>
+            <li>website design</li>
+            <li>poster design</li>
+            <li>game design</li>
+          </ol>
+      </section>
+
+    </section>
+    <!-- // TEXT ELEMENTS SECTION -->
+
+    <!-- COMBINED ELEMENTS SECTION // -->
+    <section id="combined_elements">
+      <h2>Combined Elements</h2>
+
+      <section class="element">
+
+        <h3>Main Navigation</h3>
+
+        <h4>CSS selector:</h4>
+        <p>.main-nevigation</p>
+        <p>.dropdown</p>
+        <p>button</p>
+
+        <h4>Sample code:</h4>
+        <!--<code>&lt;a href="#" class="button"&gt;Default Button&lt;/a&gt;</code>-->
+          <code>&lt;div class="main-nevigation"&gt;
+            &lt;a href="index.html"&gt;HOME&lt;/a&gt;
+            &lt;a href="works.html"&gt;WORKS&lt;/a&gt;
+            &lt;a href="contact.html"&gt;CONTACT&lt;/a&gt;
+            &lt;/div&gt;
+          </code>
+        <h4>Rendered element:</h4>
+        <nav class="main_navigation">
+          <a href="index.html">HOME</a>
+          <a href="works.html">WORKS</a>
+          <a href="contact.html">CONACT</a>
+        </nav>
+      </section>
+
+      <section class="element">
+
+        <h3>Process Analysis</h3>
+
+        <h4>CSS selector:</h4>
+        <p>.main-nevigation</p>
+        <p>.dropdown</p>
+        <p>button</p>
+
+        <h4>Sample code:</h4>
+          <code>
+            &lt;a href="intext"&gt;Go to Process Analysis&lt;/a&gt;
+          </code>
+        <h4>Rendered element:</h4>
+        <a class="text" href="#">Go to Process Analysis --></a>
+
+      </section>
+    </section>
+    <!-- // COMBINED ELEMENTS SECTION -->
+
+    <!-- // BRAND COMPONENTS SECTION -->
+    <section id="brand-components">
+      <h2>Brand Components</h2>
+
+        <h4>CSS selector:</h4>
+          <p>ul</p>
+          <p>li</p>
+
+        <h4>Rendered element:</h4>
+          <ul>
+            <li>This is my portfolio.</li>
+            <li>There are some projects will be displayed.</li>
+          </ul>
+    </section>
+    <!-- // BRAND COMPONENTS SECTION -->
+
+    <!-- // ASSEMBLE BRAND SECTION -->
+    <section id="assemble-brand">
+      <h2>Assemble Brand</h2>
+
+      <section class="elements">
+        <h3>Fonts</h3>
+
+        <h4>CSS selector:</h4>
+          <p>.font</p>
+
+        <h4>Rendered element:</h4>
+          <div class="font">
+            <img src="img/font1.png" alt="this is a font picture"></a>
+          </div>
+          <div class="font">
+            <img src="img/font2.png" alt="this is a font picture"></a>
+          </div>
+       </section>
+
+       <section class="elements">
+         <h3>Color Palettes</h3>
+
+         <h4>CSS selector:</h4>
+            <p>.font</p>
+
+         <h4>Rendered element:</h4>
+            <div class="font">
+              <img src="img/color.png" alt="this is a color picture"></a>
+            </div>
+        </section>
+
+    </section>
+    <!-- // ASSEMBLE BRAND SECTION -->
+
+    <!-- // CITATIONS SECTION -->
+    <section id="citations">
+      <h2>Citations</h2>
+
+      <ul>
+        <li>Background. [Photo].2011. Retrieved from <a href="https://www.yezibizhi.com/Img-28/150946/164967.shtml">https://www.yezibizhi.com/Img-28/150946/164967.shtml</a>.</li>
+        <li>Bree Serif. [Font].Retrieved from <a href="https://fonts.google.com/specimen/Bree+Serif?preview.text_type=custom">https://fonts.google.com/specimen/Bree+Serif?preview.text_type=customL</a>.</li>
+        <li>Roboto Slab. [Font]. Retrieved from <a href="https://fonts.google.com/specimen/Roboto+Slab?preview.text_type=custom">https://fonts.google.com/specimen/Roboto+Slab?preview.text_type=custom</a>.</li>
+      </ul>
+
+    </section>
+    <!-- // CITATIONS SECTION -->
+
+
+  </body>
+</html>

@@ -1,0 +1,408 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  /*Change the default font*/
+  /* background-color: #FFEFEE; */
+  /* font-family: 'Roboto Slab', serif; */
+  font-family: 'Bree Serif', serif;
+  font-family: 'Roboto Slab', serif;
+  margin-left: 3%;
+  margin-right: 3%;
+  background-color: #F2EDE7;
+}
+
+/*Add space between section elements*/
+section{
+  margin-bottom: 5rem;
+}
+
+.element {
+  padding-bottom: 2rem;
+  border-top-width: 1px;
+  border-top-style: solid;
+  border-top-color: black;
+}
+
+h1{
+  text-align: center;
+  color: #C08B81;
+}
+
+h2 {
+  color: #C08B81;
+  font-family: 'Bree Serif', serif;
+  font-family: 'Roboto Slab', serif;
+  font-weight: bolder;
+  text-shadow: #E0CEBA 1px 0 10px;
+}
+
+h3 {
+  color: #B28878;
+  font-family: 'Bree Serif', serif;
+  font-family: 'Roboto Slab', serif;
+  margin-top: 1rem;
+}
+
+h4 {
+  color: #B28878;
+  font-family: 'Bree Serif', serif;
+  font-family: 'Roboto Slab', serif;
+  margin-bottom: 1rem;
+  margin-top: 2.5rem;
+}
+
+p {
+  color: #898480;
+  font-family: 'Bree Serif', serif;
+  font-family: 'Roboto Slab', serif;
+  margin-top: 1rem;
+  font-size: 14px;
+}
+
+nav a:hover, nav a:focus {
+  text-decoration: none;
+}
+
+code {
+  color: black;
+  display: block;
+  margin-top: 1rem;
+  margin-left: 2rem;
+  margin-right: 2rem;
+  background-color: rgb(255, 255, 255, 0.4);
+  line-height: 1rem;
+}
+
+/*study guide navigation*/
+
+.nav {
+  overflow: hidden;
+}
+
+.nav a {
+  float: left;
+  display: block;
+  color: #B28878;
+  text-align: center;
+  padding: 0.8rem;
+  text-decoration: none;
+  font-size: 18px;
+  border-bottom: 3px solid transparent;
+}
+
+.nav a:hover {
+  color: #D7C6B3;
+  border-bottom: #B28878 solid 2px;
+  transition: .5s ease;
+}
+
+.nav a:focus {
+  color: #B28878;
+}
+
+/*
+  INTERACTIVE ELEMENTS -------------------
+*/
+
+/*In-text section elements*/
+a{
+  color: #B28878;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: bolder;
+}
+
+a.intext:hover{
+  color: #D7C6B3;
+  border-bottom: #B28878 solid 2px;
+  transition: .5s ease;
+  font-weight:bolder;
+}
+
+a.intext:focus{
+  color: #B28878;
+}
+
+/*Navigation link elements*/
+.navigationBar {
+  overflow: hidden;
+}
+
+.navigationBar a {
+  float: left;
+  display: block;
+  color: #B28878;
+  text-align: center;
+  padding: 0.8rem;
+  text-decoration: none;
+  font-size: 18px;
+  border-bottom: 3px solid transparent;
+}
+
+.navigationBar a:hover {
+  color: #D7C6B3;
+  border-bottom: #B28878 solid 2px;
+  transition: .5s ease;
+}
+
+.navigationBar a:focus {
+  color: #B28878;
+}
+
+/*subimit/reset button*/
+.submit-btn button{
+  background-color: #A1B4AC;
+  color: black;
+  border: none;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+}
+
+.reset:hover, .submit:hover, .checkout:hover {
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+.reset:focus, .submit:focus, .checkout:focus {
+  color: grey;
+}
+
+/*Text input field with label*/
+fieldset{
+  padding: 0;
+  margin:0;
+}
+
+.search{
+  padding: 1rem;
+}
+
+.search label{
+  font-weight: bolder;
+  color: #898480;
+}
+
+.search input{
+  border: 1.5px solid #D7D7D7;
+  padding: 0.4rem;
+  width: 12rem;
+  margin-left: 1rem;
+}
+
+.search input::placeholder{
+  color: white;
+}
+
+.search input:hover::placeholder{
+  color: rgb(215, 215, 215);
+}
+
+@media screen and (max-width: 560px){
+  .search input{
+    width: 12rem;
+    margin-top: 1rem;
+  }
+}
+
+/* Radio button with label */
+label.design {
+  display: block;
+  position: relative;
+  font-weight: bolder;
+  color: #898480;
+  padding-left: 1.5rem;
+  margin-bottom: 1.5rem;;
+  cursor: pointer;
+  font-size: 16px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+label.design input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+span.design {
+  position: absolute;
+  top: 2px;
+  left: 0;
+  height: 15px;
+  width: 15px;
+  background-color: #E3E3E4;
+  border-radius: 50%;
+}
+
+label.design:hover input ~ span.design {
+  background-color: #C08B81;
+}
+
+label.design input:checked ~ span.design {
+  background-color: #C08B81;
+}
+
+span.design:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+label.design input:checked ~ span.design:after {
+  display: block;
+}
+
+label.design span.design:after {
+  left: 9px;
+  top: 5px;
+  width: 5px;
+  height: 5px;
+  /* border-width: 20%; */
+}
+
+/*Image as a link section elements*/
+.header{
+  display:flex;
+  flex-direction: column;
+}
+
+
+
+.img {
+  position: relative;
+  width: 50%;
+  justify-content :flex-start;
+
+
+}
+
+.image {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  transition: .5s ease;
+  justify-content :flex-start;
+
+}
+
+.img_effect {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transition: .5s ease;
+  opacity: 0;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+
+}
+
+.img:hover .image {
+  opacity: 0.4;
+}
+
+.img:hover .img_effect {
+  opacity: 1;
+}
+
+.text a{
+  font-family: 'Yusei Magic', sans-serif;
+  color: #A0A0A0;
+  font-size: 30px;
+  text-align: center;
+}
+
+.text a:focus{
+  color: #363636;
+  font-weight:bolder;
+}
+
+@media only screen and (max-width:560px){
+  div.furniture_design>div.img{
+    width: 80%;
+  }
+
+  div.img_effect >div.text a{
+    font-size: 20px;
+  }
+}
+
+/*
+  TEXT ELEMENTS -------------------
+*/
+
+/* Paragraphs */
+.paragraphs p{
+  margin-left: 2rem;
+  margin-right: 2rem;
+  line-height: 1.5rem;
+}
+
+ul li{
+  margin-top: 2rem;
+
+}
+
+/*
+  COMBINED ELEMENTS -------------------
+*/
+.main_navigation {
+  overflow: hidden;
+}
+
+.main_navigation a {
+  float: left;
+  display: block;
+  color: #B28878;
+  text-align: center;
+  padding: 0.8rem;
+  text-decoration: none;
+  font-size: 18px;
+  border-bottom: 3px solid transparent;
+}
+
+.main_navigation a:hover {
+  color: #D7C6B3;
+  border-bottom: #B28878 solid 2px;
+  transition: .5s ease;
+}
+
+.main_navigation a:focus {
+  color: #B28878;
+}
+
+a.text{
+  color: #B28878;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: bolder;
+}
+
+a.text:hover{
+  color: #D7C6B3;
+  transition: .5s ease;
+  font-weight:bolder;
+}
+
+a.text:focus{
+  color: #B28878;
+}
+
+/* Assemble Brand Font */
+.font{
+  width: 80%
+}
+
+.font img{
+  width:100%;
+}
