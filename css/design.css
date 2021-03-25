@@ -1,6 +1,6 @@
 * {
   box-sizing: border-box;
-  border: 1px solid pink;
+  /* border: 1px solid pink; */
 }
 
 .web-part{
@@ -12,6 +12,10 @@
 .web-part h1{
   font-size: 35px;
   text-align: left;
+}
+
+.web-part h2{
+  text-align: center;
 }
 
 .web-part-one{
@@ -79,4 +83,40 @@
 
 .web-part-two-left p{
   line-height: 25px;
+}
+
+.poster-part{
+  margin-top: 8rem;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+.poster-part h2{
+  text-align: center;
+}
+
+.poster-part-one{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.poster-part-one-left{
+  width: 50%;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.poster-part-one-left img{
+  width: 45%;
+}
+
+.poster-part-one-right{
+  width: 50%;
+}
+
+.poster-part-one-right p{
+    line-height: 25px;
 }
