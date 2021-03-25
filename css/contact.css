@@ -3,10 +3,24 @@
 .contact {
   margin-top: 5rem;
   border-radius: 5px;
-  background-color: #f2f2f2;
+  background-color: #D7C4BD;
   padding: 20px;
   margin-left: 20%;
   margin-right: 20%;
+  box-shadow: 0 10px 12px 0 rgba(0,0,0,0.24),0 17px 20px 0 rgba(0,0,0,0.19);
+}
+
+.title h1{
+  font-size: 35px;
+}
+
+.title h5{
+  text-align: center;
+  margin-top: -2rem;
+}
+
+.table{
+  margin-top: 3rem;
 }
 
 input[type=text], select, textarea {
@@ -31,4 +45,36 @@ input[type=submit] {
 
 input[type=submit]:hover {
   background-color: #45a049;
+}
+
+label{
+  color: #865E5E;
+}
+
+.add-btn{
+  display: flex;
+  justify-content: flex-end;
+}
+
+.add-btn a{
+  background-color: #865B5B;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+  margin: 2rem;
+  cursor: pointer;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+}
+
+.add-btn a:hover{
+  background-color: #B99592;
+}
+
+.add-btn a:focus{
+  background-color: #865B5B;
 }
