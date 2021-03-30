@@ -1,5 +1,7 @@
 * {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
   /* border: 1px solid pink; */
 }
 
@@ -15,10 +17,12 @@
 }
 
 .web-part h2{
+  margin-top: 1.5rem;
   text-align: center;
 }
 
 .web-part-one{
+  margin-top: 4rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -39,11 +43,42 @@
   width: 50%;
 }
 
-.web3, .web4{
-  width: 80%;
+/* .web3, .web4{
+  height:auto;
+  width:80%;
+  position:absolute;
+  top:0;
+  left:0;
+  z-index:-1;
+  display:none;
+} */
+
+.web3{
+  height:auto;
+  width:75%;
+  /* position:absolute; */
+  top:0;
+  left:0;
+  z-index:-1;
+  display:none;
 }
 
-.web3 img, .web4 img{
+.indicate{
+    border:5px solid green;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    /* height:-50%; */
+    width: 60%;
+    /* position:relative; */
+    text-align:center;
+}
+
+#previous{
+  color:yellow;
+}
+
+.web3 img{
   width: 100%;
 }
 
@@ -102,6 +137,7 @@
 }
 
 .poster-part-one{
+  margin-top: 4rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -125,4 +161,108 @@
 
 .poster-part-one-right p{
     line-height: 25px;
+}
+
+@media only screen and (max-width:850px){
+  .web-part-one{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+  }
+  .web-part-one-left{
+    width: 100%;
+  }
+
+  .web-part-one-right{
+    width: 100%;
+  }
+
+  .web-part-one-right h3{
+    margin-top: 2rem;
+  }
+
+  .web-part-two{
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    margin-top: 4rem;
+  }
+
+  .web-part-two-right{
+    width: 100%;
+  }
+
+  .web-part-two-left p{
+    width: 100%;
+  }
+  .web-part-two-left{
+    width: 100%;
+  }
+
+  .web-part-two-left h3{
+    margin-top: 3rem;
+  }
+
+  .poster-part-one{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+  }
+
+  .poster-part-one-left{
+    width: 100%;
+  }
+
+  .poster-part-one-right{
+    width: 100%;
+  }
+
+  .poster-part-one-right h3{
+    margin-top: 2rem;
+  }
+
+}
+
+@media only screen and (max-width:580px){
+  .web-part h2{
+    font-size: 22px;
+  }
+}
+
+@media only screen and (max-width:400px){
+  .web-part h2{
+    font-size: 20px;
+  }
+
+  .poster-section h2{
+    margin-top: 1.5rem;
+    font-size: 20px;
+  }
+
+  .web-part-one-right h3{
+    font-size: 18px;
+  }
+
+  .poster-part-one-right h3{
+    font-size: 18px;
+  }
+
+  .web3{
+    width: 100%;
+  }
+
+  .web-part-two-right{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+  }
+
+  .web1{
+    width: 70%;
+  }
+
+  .web2{
+    margin-top: 1.5rem;
+    width: 70%;
+  }
 }

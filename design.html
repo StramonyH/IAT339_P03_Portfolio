@@ -23,34 +23,45 @@
   <body>
 
       <section class="head">
-          <div class="header">
-            <div class="header-logo">
-              <a href="index.html"><img src = "img/logo.png" alt = "logo"/></a>
-            </div>
-
-            <div class="navigation">
-              <nav>
-                <ul>
-                  <li><a href="index.html">Home</a></li>
-                  <li><a href="design.html">Design</a></li>
-                  <li><a href="contact.html">Contact</a></li>
-                </ul>
-              </nav>
-            </div>
+        <div class="header">
+          <div class="header-logo">
+            <a href="index.html"><img src = "img/logo.png" alt = "logo"/></a>
           </div>
 
+          <div class="navigation">
+            <nav>
+              <div class="icon-display">
+                <div class="nav-logo">
+                  <a href="index.html"><img src = "img/logo.png" alt = "logo"/></a>
+                </div>
+                <div class="phone-menu-icon"><label for="menu"><img src = "img/meun.png" alt = "shopping cart"/></label></div>
+              </div>
+              <input type="checkbox" id="menu">
+              <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="design.html">Design</a></li>
+                <li><a href="contact.html">Contact</a></li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+
         <section class="web-part">
-          <h1>Design Process Analysis</h1>
-          <h2>-Website design-</h2>
+          <h5>-Design Process Analysis-</h5>
+          <h2>Website design</h2>
           <div class="web-part-one">
             <div class="web-part-one-left">
               <div class="web3">
                 <img src = "img/web3.png" alt = "this is a linkedin picture"/>
               </div>
 
-              <div class="web4">
+              <div class="web3">
                 <img src = "img/web4.png" alt = "this is a linkedin picture"/>
               </div>
+
+              <div class="indicate">
+                <a href=" " id="previous"><<</a><a href="javascript:void(0)" id="next">>></a>
+            </div>
             </div>
             <div class="web-part-one-right">
               <h3>Introduce</h3>
@@ -94,7 +105,7 @@
 
         <section class="poster-part">
           <div class="poster-section">
-            <h2>-Poster design-</h2>
+            <h2>Poster design</h2>
             <div class="poster-part-one">
               <div class="poster-part-one-left">
                 <img src = "img/pos.png" alt = "this is a linkedin picture"/>
@@ -180,5 +191,40 @@
           </div>
 
       </section>
+
+      <script>
+    items = document.querySelectorAll(".web3")
+    items[0].style.display = "block";
+
+    index = 0
+    function next(){
+        index++;
+        if (index == items.length) index = 0
+
+        changeItem()
+
+    }
+
+    function previous(){
+        index--;
+        if (index == -1) index = 2
+
+        changeItem()
+    }
+
+    function changeItem(){
+        for (i = 0; i < items.length; i++){
+            items[i].style.display = "none";
+            items[index].classList.remove("active");
+        }
+
+        items[index].style.display = "block";
+        items[index].classList.add("active");
+    }
+
+
+    document.querySelector("#next").addEventListener("click", next)
+    document.querySelector("#previous").addEventListener("click", previous)
+  </script>
     </body>
   </html>

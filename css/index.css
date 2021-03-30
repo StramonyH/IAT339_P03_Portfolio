@@ -1,8 +1,28 @@
 * {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
   /* border: 1px solid pink; */
 }
 
+.head{
+  height: 100vh;
+}
+
+.header-background{
+  background-repeat: no-repeat;
+  background-position: center 0;
+  background-size: cover;
+  height: 100%;
+}
+
+.picture{
+  position: absolute;
+  background-image: url("../img/header.jpg");
+  z-index: -1;
+  width: 100vw;
+  height: 100vh;
+}
 
 .header-info{
   margin-top: 3rem;
@@ -15,9 +35,9 @@
   font-size: 72px;
 }
 
-.a-designer h1{
+/* .a-designer h1{
   margin-top: -3.5rem;
-}
+} */
 
 .header-info-name{
   width:40%
@@ -26,7 +46,7 @@
 .header-info-text{
   /* margin-top: 2rem; */
   background-color: rgba(255, 255, 255, 0.5);
-  width: 30%;
+  width: 380px;
 }
 
 .header-info-text-all{
@@ -43,7 +63,6 @@
 
 .line{
   background-color: #F2BD56;
-  margin-top:-2rem;
   width: 100px;
   height: 10px;
 }
@@ -107,7 +126,7 @@
 }
 
 .intro-left-text p{
-  margin-top: 2.5rem;
+  margin-top: 2rem;
   line-height: 30px;
 }
 
@@ -137,17 +156,27 @@
   width: 70%;
 }
 
+.intro-num-right p{
+  color: #EFB2B2;
+}
+
 .intro-num-left h1{
   text-align: center;
   font-size: 40px;
+  color: #F2BD56;
 }
 
-.intro-num-right p{
-  text-align: left;
-  font-size: 10px;
-  color:#865E5E;
-  font-weight: bolder;
+.intro-right-text-p{
+  margin-top: 2rem;
 }
+
+.intro-right-text-p p{
+  text-align: left;
+  /* font-size: 10px; */
+  /* color:#865E5E; */
+  /* font-weight: bolder; */
+}
+
 
 .SIAT {
   margin-top: -1rem;
@@ -168,7 +197,7 @@
 }
 .website, .poster, .game{
   background-color: #373737;
-  width: 25%;
+  width: 230px;
   margin: 2rem;
   display: flex;
   justify-content:space-evenly;
@@ -186,25 +215,18 @@
 }
 
 .website-font, .poster-font, .game-font{
-  margin-top: 6rem;
+  margin-top: 7rem;
   width: 65%;
 }
 
 .website-font h3, .poster-font h3, .game-font h3{
   text-align: left;
+  color: #F3EAE0;
 }
 
 .website:hover, .poster:hover, .game:hover{
     background-color: #C08B81;
     transition: 0.5s;
-}
-
-.design-h3{
-  margin-top: -1rem;
-}
-
-.website-font h3,.poster-font h3,.game-font h3{
-  color: #F3EAE0;
 }
 
 .design-h3 h3{
@@ -226,4 +248,24 @@
   width: 100%;
   height: 40vh;
   background-color: black;
+}
+
+/* Animation*/
+.intro{
+  display: inline-block;
+  margin: 0 0.5rem;
+
+  animation: fadeInUp; /* referring directly to the animation's @keyframe declaration */
+  animation-duration: 2s; /* don't forget to set a duration! */
+}
+
+@keyframes fadeInUp {
+    from {
+        transform: translate3d(0, 40px, 0);
+    }
+
+    to {
+        transform: translate3d(0, 0, 0);
+        opacity: 1;
+    }
 }

@@ -17,14 +17,17 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&family=Roboto+Slab&display=swap" rel="stylesheet">
 
+    <!-- Animation -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
 
   </head>
 
   <body>
 
       <section class="head">
-          <div class="header-background">
-            <img src = "img/header.jpg" alt = "header-background"/>
+          <div class="header-background picture">
+            <!-- <img src = "img/header.jpg" alt = "header-background"/> -->
           </div>
           <div class="header">
             <div class="header-logo">
@@ -33,6 +36,13 @@
 
             <div class="navigation">
               <nav>
+                <div class="icon-display">
+                  <div class="nav-logo">
+                    <a href="index.html"><img src = "img/logo.png" alt = "logo"/></a>
+                  </div>
+                  <div class="phone-menu-icon"><label for="menu"><img src = "img/meun.png" alt = "shopping cart"/></label></div>
+                </div>
+                <input type="checkbox" id="menu">
                 <ul>
                   <li><a href="index.html">Home</a></li>
                   <li><a href="design.html">Design</a></li>
@@ -94,8 +104,10 @@
             <div class="intro-right">
               <div class="intro-right-text">
               <h3>SKILLS</h3>
-              <p>Proficient in HTML5, CSS3, JavaScript, Processing, Adobe Illustrator, Figma</p>
-              <p>Proficient in HTML5, CSS3, JavaScript, Processing, Adobe Illustrator, Figma</p>
+              <div class="intro-right-text-p">
+                <p>Proficient in HTML5, CSS3, JavaScript, Processing, Adobe Illustrator, Figma</p>
+                <p>Proficient in HTML5, CSS3, JavaScript, Processing, Adobe Illustrator, Figma</p>
+              </div>
                 <div class="intro-right-num">
                   <div class="intro-text-left">
                     <div class="intro-num-left">
@@ -239,6 +251,6 @@
 
     </section>
 
-
+    <!-- <script src="script/index.js"></script> -->
     </body>
   </html>
