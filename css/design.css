@@ -86,9 +86,15 @@
 }
 
 .poster-part{
+  background-color: black;
   margin-top: 8rem;
-  margin-left: 5%;
-  margin-right: 5%;
+  border: 1px solid black;
+  /* margin-left: 5%;
+  margin-right: 5%; */
+}
+
+.poster-section{
+  margin: 5%;
 }
 
 .poster-part h2{
