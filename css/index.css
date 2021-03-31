@@ -6,7 +6,8 @@
 }
 
 .head{
-  height: 100vh;
+  border: 1px solid pink;
+  min-height: 100vh;
 }
 
 .header-background{
@@ -21,7 +22,7 @@
   background-image: url("../img/header.jpg");
   z-index: -1;
   width: 100vw;
-  height: 100vh;
+  min-height: 100vh;
 }
 
 .header-info{
@@ -98,6 +99,7 @@
 
 /* about me */
 .intro{
+  border: 1px solid green;
   margin-top: 14rem;
 }
 
@@ -191,8 +193,8 @@
   display: flex;
   justify-content:center;
   text-align:center;
-  margin-left: 20%;
-  margin-right: 20%;
+  max-width: 800px;
+  margin: auto;
   /* align-items: center; */
 }
 .website, .poster, .game{
@@ -268,4 +270,46 @@
         transform: translate3d(0, 0, 0);
         opacity: 1;
     }
+}
+
+/* Animation scoll down */
+#arrow {
+  position: relative;
+  top: 50px;
+  margin: auto;
+  border: 5px solid #FFF;
+  border-right: none;
+  border-top: none;
+
+  /* Create the arrow by rotating the     two borders */
+  width: 20px;
+	height: 20px;
+  -webkit-transform: rotate(-45deg);
+  -webkit-transform-origin: 50% 50%;
+
+   -webkit-animation: down 3s infinite;
+  -moz-animation:    down 3s infinite;
+  -o-animation:      down 3s infinite;
+  animation:         down 3s infinite;
+}
+
+@-webkit-keyframes down {
+  0% { height: 20px; width: 20px; }
+  50%   { height: 30px; width: 30px; }
+  100% { height: 20px; width: 20px; }
+}
+@-moz-keyframes down {
+  0% { height: 20px; width: 20px; }
+  50%   { height: 30px; width: 30px; }
+  100% { height: 20px; width: 20px; }
+}
+@-o-keyframes down {
+  0% { height: 20px; width: 20px; }
+  50%   { height: 30px; width: 30px; }
+  100% { height: 20px; width: 20px; }
+}
+@keyframes down {
+  0% { height: 20px; width: 20px; }
+  50%   { height: 30px; width: 30px; }
+  100% { height: 20px; width: 20px; }
 }

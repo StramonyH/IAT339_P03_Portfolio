@@ -29,11 +29,13 @@
 }
 
 .web-part-one-left{
-  /* height: 600px; */
-  width: 50%;
+  border: 1px solid pink;
+  position: relative;
+  height: 40vh;
+  width: 35%;
+  text-align: right;
   display: flex;
   align-items: center;
-  flex-wrap: wrap;
   justify-content: center;
   /* background-color: #C08B81; */
 
@@ -55,12 +57,14 @@
 
 .web3{
   height:auto;
-  width:75%;
-  /* position:absolute; */
+  width:100%;
+  position:absolute;
   top:0;
   left:0;
   z-index:-1;
   display:none;
+  text-align: center;
+  border: 1px solid red;
 }
 
 .indicate{
@@ -68,9 +72,9 @@
     display:flex;
     justify-content: space-between;
     align-items: center;
-    /* height:-50%; */
-    width: 60%;
-    /* position:relative; */
+    height:100%;
+    width: 100%;
+    position:absolute;
     text-align:center;
 }
 
@@ -164,12 +168,14 @@
 }
 
 @media only screen and (max-width:850px){
+
   .web-part-one{
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
   }
   .web-part-one-left{
+    height: 55vw;
     width: 100%;
   }
 
@@ -265,4 +271,25 @@
     margin-top: 1.5rem;
     width: 70%;
   }
+}
+
+/* animation */
+.web-part-one-left {
+  display: inline-block;
+  margin: 0 0.5rem;
+
+  animation: fadeIn; /* referring directly to the animation's @keyframe declaration */
+  animation-duration: 3s; /* don't forget to set a duration! */
+}
+
+@-webkit-keyframes fadeIn {
+	0% {
+		opacity: 0;
+	}
+	20% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
 }
