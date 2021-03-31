@@ -6,7 +6,7 @@
 }
 
 .head{
-  border: 1px solid pink;
+  /* border: 1px solid pink; */
   min-height: 100vh;
 }
 
@@ -47,7 +47,7 @@
 .header-info-text{
   /* margin-top: 2rem; */
   background-color: rgba(255, 255, 255, 0.5);
-  width: 380px;
+  width: 40%;
 }
 
 .header-info-text-all{
@@ -99,7 +99,7 @@
 
 /* about me */
 .intro{
-  border: 1px solid green;
+  /* border: 1px solid green; */
   margin-top: 14rem;
 }
 
@@ -252,6 +252,150 @@
   background-color: black;
 }
 
+/* mobile */
+@media only screen and (max-width:1200px){
+  .header-info{
+    margin-top: 3rem;
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+
+  .header-info h1{
+    text-align: left;
+    font-size: 60px;
+  }
+
+  .header-info-text h3{
+    font-size: 25px;
+  }
+
+  .line{
+    width: 80px;
+    height: 8px;
+  }
+
+}
+
+@media only screen and (max-width:1000px){
+  .header-info{
+    margin-top: 3rem;
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+
+  .header-info h1{
+    text-align: left;
+    font-size: 45px;
+  }
+
+  .header-info-text h3{
+    font-size: 20px;
+  }
+
+  .header-info-text{
+    /* margin-top: 2rem; */
+    background-color: rgba(255, 255, 255, 0.5);
+    width: 48%;
+  }
+}
+
+@media only screen and (max-width:850px){
+  .header-info{
+    margin-top: 3rem;
+    margin-left: 5%;
+    margin-right: 5%;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+  }
+
+  .header-intro-name{
+    width:100%;
+  }
+
+  .header-intro-text{
+    width:100%;
+  }
+
+  .header-info h1{
+    text-align: left;
+    font-size: 50px;
+  }
+
+  .header-info-text h3{
+    font-size: 20px;
+  }
+
+
+}
+
+@media only screen and (max-width:1000px){
+  .intro-left-text h3, .intro-right-text h3{
+    font-size: 20px;
+  }
+}
+
+@media only screen and (max-width:850px){
+  .intro-part{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+  }
+
+  .intro-left{
+    width: 80%;
+  }
+
+  .intro-right{
+    width: 80%;
+  }
+
+  .intro-left-text{
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+
+  .intro-right-text{
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+
+  .website, .poster, .game{
+    width: 150px;
+    height: 150px;
+  }
+
+  .website-icon, .poster-icon, .game-icon{
+    margin-top: 3.5rem;
+  }
+
+  .website-font, .poster-font, .game-font{
+    margin-top: 4.5rem;
+    width: 65%;
+  }
+
+  .website-font h3, .poster-font h3, .game-font h3{
+    font-size: 16px;
+  }
+
+  .design-h3 h3{
+    font-size: 16px;
+  }
+}
+
+@media only screen and (max-width:680px){
+  .design-item{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+  }
+
+  .website, .poster, .game{
+    width: 200px;
+    height: 200px;
+  }
+
+}
 /* Animation*/
 .intro{
   display: inline-block;
