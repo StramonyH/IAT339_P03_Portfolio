@@ -29,7 +29,7 @@
 }
 
 .web-part-one-left{
-  border: 1px solid pink;
+  /* border: 1px solid pink; */
   position: relative;
   height: 40vh;
   width: 35%;
@@ -68,7 +68,7 @@
 }
 
 .indicate{
-    border:5px solid green;
+    /* border:5px solid green; */
     display:flex;
     justify-content: space-between;
     align-items: center;
@@ -78,8 +78,9 @@
     text-align:center;
 }
 
-#previous{
-  color:yellow;
+#previous,#next{
+  color:black;
+  font-size: 22px;
 }
 
 .web3 img{
@@ -91,6 +92,7 @@
 }
 
 .web-part-two{
+  margin-top: 2rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
