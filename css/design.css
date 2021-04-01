@@ -5,7 +5,7 @@
   /* border: 1px solid pink; */
 }
 
-.web-part{
+#web-part{
   margin-top: 5rem;
   margin-left: 5%;
   margin-right: 5%;
@@ -64,7 +64,6 @@
   z-index:-1;
   display:none;
   text-align: center;
-  border: 1px solid red;
 }
 
 .indicate{
@@ -72,11 +71,27 @@
     display:flex;
     justify-content: space-between;
     align-items: center;
+    /* height:50vw; */
     height:100%;
     width: 100%;
     position:absolute;
     text-align:center;
+    font-size: bolder;
+
 }
+
+@media only screen and (max-width:1200px){
+  .indicate{
+    height: 80%;
+  }
+}
+
+@media only screen and (max-width:980px){
+  .indicate{
+    height: 60%;
+  }
+}
+
 
 #previous,#next{
   color:black;
@@ -126,7 +141,7 @@
   line-height: 25px;
 }
 
-.poster-part{
+#poster-part{
   background-color: black;
   margin-top: 8rem;
   border: 1px solid black;
@@ -227,6 +242,10 @@
 
   .poster-part-one-right h3{
     margin-top: 2rem;
+  }
+
+  .indicate{
+    height: 100%;
   }
 
 }

@@ -10,7 +10,7 @@ body {
   font-family: 'Roboto Slab', serif;
   margin-left: 3%;
   margin-right: 3%;
-  background-color: #F2EDE7;
+  background-color: #2B2B2D;
 }
 
 /*Add space between section elements*/
@@ -27,34 +27,36 @@ section{
 
 h1{
   text-align: center;
-  color: #C08B81;
+  /* color: #F2BD56; */
+  color:#EFB2B2;
 }
 
 h2 {
-  color: #C08B81;
+  color: #EFB2B2;
   font-family: 'Bree Serif', serif;
   font-family: 'Roboto Slab', serif;
   font-weight: bolder;
-  text-shadow: #E0CEBA 1px 0 10px;
+  text-shadow: #F2BD56 1px 0 10px;
 }
 
 h3 {
-  color: #B28878;
+  color: #EFB2B2;
   font-family: 'Bree Serif', serif;
   font-family: 'Roboto Slab', serif;
-  margin-top: 1rem;
 }
 
 h4 {
-  color: #B28878;
+  color: #EFB2B2;
   font-family: 'Bree Serif', serif;
   font-family: 'Roboto Slab', serif;
-  margin-bottom: 1rem;
-  margin-top: 2.5rem;
+}
+
+h5{
+  color: #F2BD56;
 }
 
 p {
-  color: #898480;
+  color: #F3EAE0;
   font-family: 'Bree Serif', serif;
   font-family: 'Roboto Slab', serif;
   margin-top: 1rem;
