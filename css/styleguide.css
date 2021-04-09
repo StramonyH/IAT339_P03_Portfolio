@@ -177,6 +177,78 @@ a.intext:focus{
   color: grey;
 }
 
+.web-part-two{
+  margin-top: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row-reverse;
+}
+
+.web-part-two-right{
+  width: 50%;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.web-part-two-left{
+  width: 50%;
+}
+
+.web1, .web2{
+  width: 40%;
+}
+
+.web1 img, .web2 img{
+  width: 100%;
+}
+
+.web-part-one-right p{
+  line-height: 25px;
+}
+
+.web-part-two-left p{
+  line-height: 25px;
+}
+
+.table{
+  margin-top: 3rem;
+}
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #EFB2B2;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #2B2B2D;
+  color: #2B2B2D;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input,textarea{
+  background-color:#2B2B2D;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+label{
+  color: #EFB2B2;
+}
+
+
 /*Text input field with label*/
 fieldset{
   padding: 0;
