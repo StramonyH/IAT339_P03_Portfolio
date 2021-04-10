@@ -129,8 +129,26 @@
   width: 40%;
 }
 
+.web-part-one-right h3{
+  margin-top: 2rem;
+}
+
+.web-part-two-left h3{
+  margin-top: 2rem;
+}
+
+
 .web1 img, .web2 img{
   width: 100%;
+  -webkit-filter: blur(3px);
+  filter: blur(3px);
+  -webkit-transition: .3s ease-in-out;
+  transition: .3s ease-in-out;
+}
+
+.web1 img:hover, .web2 img:hover{
+  -webkit-filter: blur(0);
+	filter: blur(0);
 }
 
 .web-part-one-right p{
@@ -182,6 +200,10 @@
 
 .poster-part-one-right p{
     line-height: 25px;
+}
+
+.poster-part-one-right h3{
+  margin-top: 2rem;
 }
 
 @media only screen and (max-width:850px){
