@@ -9,16 +9,21 @@
     <title>Portfolio</title>
 
     <link href="css/styleguide.css" rel="stylesheet">
-    <!-- <link href="css/normalize.css" rel="stylesheet"> -->
+    <link href="css/aos.css" rel="stylesheet">
+
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet">
 
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&family=Roboto+Slab&display=swap" rel="stylesheet">
 
+    <!-- Animation -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+		<link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+
   </head>
 
-  <body>
+  <body data-aos-easing="ease-out-back" data-aos-duration="1000" data-aos-delay="0" data-new-gr-c-s-check-loaded="14.1005.0" data-gr-ext-installed="">
     <header>
       <h1>H.G Portfolio</h1>
 
@@ -88,8 +93,8 @@
 
         <h4>CSS selector:</h4>
           <p>.submit-btn</p>
-          <p>.reset:hover, .submit:hover, .checkout:hover</p>
-          <p>.reset:focus, .submit:focus, .checkout:focus</p>
+          <p>.reset:hover, .submit:hover</p>
+          <p>.reset:focus, .submit:focus</p>
 
         <h4>Sample code:</h4>
           <code>
@@ -100,9 +105,9 @@
           </code>
 
         <h4>Rendered element:</h4>
-            <div class="submit-btn">
-              <button class="submit" type="submit">SUBMIT</button>
-              <button class="reset" type="reset">RESET</button>
+            <div class="submit-btn" >
+              <button class="submit  hvr-pulse-grow" type="submit">SUBMIT</button>
+              <button class="reset  hvr-pulse-grow" type="reset">RESET</button>
             </div>
       </section>
 
@@ -284,15 +289,121 @@
 
         <h4>CSS selector:</h4>
         <p>.main-nevigation</p>
-        <p>.dropdown</p>
-        <p>button</p>
 
         <h4>Rendered element:</h4>
         <nav class="main_navigation">
-          <a href="index.html">HOME</a>
-          <a href="works.html">WORKS</a>
-          <a href="contact.html">CONACT</a>
+          <a href="index.html">About Me</a>
+          <a href="design.html">Web Design</a>
+          <a href="design2.html">Poster Design</a>
+          <a href="contact.html">Contact</a>
         </nav>
+      </section>
+
+      <section class="element">
+
+        <h3>About Me</h3>
+
+        <h4>CSS selector:</h4>
+        <p>.intro</p>
+        <p>.intro-part</p>
+        <p>.intro-left</p>
+        <p>.intro-right</p>
+        <p>.design</p>
+
+        <h4>Rendered element:</h4>
+          <section class="intro" data-aos="fade-up" data-aos-duration="2000">
+            <!-- <h5> -About Me-</h5> -->
+            <div class="intro-part">
+              <div class="intro-left">
+                <div class="intro-left-text">
+                    <h5> -About Me-</h5>
+                  <h3 class="bubbles">INTEREST OF EMPLOYMENT</h3>
+                  <p>I would like work for User Interface Design Company, because I want to pass the information to more users
+                    through practical and beautiful design. I believe this can attract more users.</p>
+                </div>
+              </div>
+
+              <div class="intro-right">
+                <div class="intro-right-text">
+                <h3>SKILLS</h3>
+                <div class="intro-right-text-p">
+                  <p>Proficient in HTML5, CSS3, JavaScript, Processing, Adobe Illustrator, Figma</p>
+                  <p>Good proficiency in Java, Maya, Pr, Ae</p>
+                </div>
+                  <div class="intro-right-num" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="500">
+                    <div class="intro-text-left">
+                      <div class="intro-num-left">
+                        <h2>3</h2>
+                      </div>
+                      <div class="intro-num-right">
+                        <p>study in</p>
+                        <div class="SIAT">
+                          <p>SIAT major at SFU</p>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="intro-text-left">
+                      <div class="intro-num-left">
+                        <h2>4</h2>
+                      </div>
+                      <div class="intro-num-right">
+                        <p></p>
+                        <div class="SIAT">
+                          <p>GPA</p>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="design" data-aos="zoom-out-down" data-aos-duration="2000" data-aos-delay="1000">
+            <div class="design-item">
+              <a href="design.html"><div class="website">
+                <div class="website-icon">
+                  <img src = "img/website.png" alt = "this is a website picture"/>
+                </div>
+                <div class="website-font">
+                  <h3>Website</h3>
+                  <div class="design-h3">
+                    <h3>Design</h3>
+                    <p>4 projects</p>
+                  </div>
+                </div>
+              </div></a>
+
+              <a href="design2.html"><div class="poster">
+                <div class="poster-icon">
+                  <img src = "img/poster.png" alt = "this is a poster picture"/>
+                </div>
+                <div class="poster-font">
+                  <h3>Poster</h3>
+                  <div class="design-h3">
+                    <h3>Design</h3>
+                    <p>3 projects</p>
+                  </div>
+                </div>
+              </div></a>
+
+              <a href="#"><div class="game">
+                <div class="game-icon">
+                  <img src = "img/game.png" alt = "this is a linkedin picture"/>
+                </div>
+                <div class="game-font">
+                  <h3>Game</h3>
+                  <div class="design-h3">
+                    <h3>Design</h3>
+                    <p>5 projects</p>
+                  </div>
+
+                </div>
+              </div></a>
+            </div>
+          </div>
+        </section>
+        <a class="text" href="index.html">Go to About Me --></a>
       </section>
 
       <section class="element">
@@ -308,62 +419,63 @@
 
         <h4>Rendered element:</h4>
         <div class="web-part-two">
-          <div class="web-part-two-right">
+          <div class="web-part-two-right" data-aos="flip-right" data-aos-delay="1000">
             <div class="web1">
-              <img src = "img/web1.png" alt = "this is a linkedin picture"/>
+              <img src = "img/web1.png" alt = "this is a website picture"/>
             </div>
 
             <div class="web2">
-              <img src = "img/web2.png" alt = "this is a linkedin picture"/>
+              <img src = "img/web2.png" alt = "this is a website picture"/>
             </div>
           </div>
-          <div class="web-part-two-left">
+          <div class="web-part-two-left" data-aos="flip-left" data-aos-delay="500">
             <h3>Analyze</h3>
-            <p>The cake website needs to reflect what services and products can be provided,and we must design a service list with a clear
-              hierarchical structure. For example, use a carousel in homepage can let the users able to see the new products once they enter the site. At the same time,
-              several important sections have been designed on the homepage and can be linked to subpages for more detailed understanding. In the product list,
-              On the product detail page, you can not only see the detailed introduction of this cake or drink, but also the recommendations of other products.
+            <p>This cake website needs to reflect what services and products are provided, and we must design a service list with a clear
+              hierarchy. For example, using a carousel in homepage can let the users able to see the new products once they enter the site. At the same time,
+              several important sections have been designed on the homepage and can be linked to subpages for more detailed understanding. On the product list page
+              and the product detail pages, you can see not only the detailed introduction of this cake or drink, but also the recommendations of other products.
               We also need to consider that the website can be displayed perfectly on different screens,so we also need to have different responsive designs.
               For the screen that is too small, we need to change some pictures and menus.</p>
 
               <h3>Feedback</h3>
-            <p>This project was completed by me and another partner. I am quite satisfied with this project, and realized some interesting interactive designs,
-              such as a carousel. At the same time, the company's service navigation and product list are given in detail.</p>
+            <p>This project was completed by me and another partner. I am quite satisfied with this project, and I learned some interesting interactive designs,
+              such as how the carousel can be used. At the same time, the company's service navigation and product list are given in detail which means the contents
+              are also well.</p>
             <p></p>
           </div>
         </div>
-        <a class="text" href="#">Go to Process Analysis --></a>
+        <a class="text" href="design.html">Go to Process Analysis --></a>
 
       </section>
 
-      <section="element">
-      <h3>Contact</h3>
+      <section class="element">
+        <h3>Contact</h3>
 
-      <h4>CSS selector:</h4>
-      <p>.table</p>
-      <p>form</p>
-      <p>label</p>
+        <h4>CSS selector:</h4>
+        <p>.table</p>
+        <p>form</p>
+        <p>label</p>
 
-      <h4>Rendered element:</h4>
-      <div class="table">
-        <form action="/action_page.php">
-         <label for="name">Name</label>
-         <input type="text" id="name" name="firstname" placeholder="Your name..">
+        <h4>Rendered element:</h4>
+        <div class="table" data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-delay="300" data-aos-offset="0">
+          <form action="/action_page.php">
+           <label for="name">Name</label>
+           <input type="text" id="name" name="firstname" placeholder="Your name..">
 
-         <label for="phone">Phone</label>
-         <input type="text" id="phone" name="number" placeholder="Your phone number..">
+           <label for="phone">Phone</label>
+           <input type="text" id="phone" name="number" placeholder="Your phone number..">
 
-         <label for="email">Email</label>
-         <input type="text" id="email" name="mail" placeholder="Your email..">
-         </select>
+           <label for="email">Email</label>
+           <input type="text" id="email" name="mail" placeholder="Your email..">
 
-         <label for="subject">Subject</label>
-         <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+           <label for="subject">Subject</label>
+           <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
 
-        </form>
+          </form>
 
-      </div>
-    </section>
+        </div>
+        <a class="text" href="contact.html">Go to Contact --></a>
+      </section>
     </section>
     <!-- // COMBINED ELEMENTS SECTION -->
 
@@ -395,10 +507,10 @@
 
         <h4>Rendered element:</h4>
           <div class="font">
-            <img src="img/font1.png" alt="this is a font picture"></a>
+            <a><img src="img/font1.png" alt="this is a font picture"></a>
           </div>
           <div class="font">
-            <img src="img/font2.png" alt="this is a font picture"></a>
+            <a><img src="img/font2.png" alt="this is a font picture"></a>
           </div>
        </section>
 
@@ -410,7 +522,7 @@
 
          <h4>Rendered element:</h4>
             <div class="font">
-              <img src="img/color.png" alt="this is a color picture"></a>
+            <a><img src="img/color.png" alt="this is a color picture"></a>
             </div>
         </section>
 
@@ -429,10 +541,19 @@
 
       <div class="add-btn">
         <a href="index.html">Go to Portfolio</a>
+        <a href="citation.html">Detail Citations</a>
      </div>
 
     </section>
     <!-- // CITATIONS SECTION -->
+    <script src="script/aos.js"></script>
+
+    <script>
+      AOS.init({
+        easing: 'ease-out-back',
+        duration: 1000
+      });
+    </script>
 
 
   </body>
