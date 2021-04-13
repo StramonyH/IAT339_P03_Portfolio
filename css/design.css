@@ -11,10 +11,19 @@
   margin-right: 5%;
 }
 
-.web-part h1{
+#web-part h1{
+  background: linear-gradient(to right, var(--pink) 0%, white 100%);
+  background-size: 300%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: fontColorChange 4s linear infinite;
   font-size: 35px;
   text-align: left;
 }
+
+@keyframes fontColorChange {
+  100%{
+    background-position: 300%}}
 
 .web-part h2{
   margin-top: 1.5rem;
@@ -44,16 +53,6 @@
 .web-part-one-right{
   width: 50%;
 }
-
-/* .web3, .web4{
-  height:auto;
-  width:80%;
-  position:absolute;
-  top:0;
-  left:0;
-  z-index:-1;
-  display:none;
-} */
 
 .web3{
   height:auto;
@@ -94,7 +93,7 @@
 
 
 #previous,#next{
-  color:black;
+  color:var(--black);
   font-size: 22px;
 }
 
@@ -140,18 +139,18 @@
 
 .web1 img, .web2 img{
   width: 100%;
-  -webkit-filter: blur(3px);
+  /* -webkit-filter: blur(3px);
   filter: blur(3px);
   -webkit-transition: .3s ease-in-out;
-  transition: .3s ease-in-out;
+  transition: .3s ease-in-out; */
 }
 
 .web1 img:hover, .web2 img:hover{
-  -webkit-filter: blur(0);
-	filter: blur(0);
+  transform:scale(1.12);
+  transition: .4s;
 }
 
-.web-part-one-right p{
+.-one-right p{
   line-height: 25px;
 }
 
@@ -160,9 +159,11 @@
 }
 
 #poster-part{
-  background-color: black;
+  background-color: var(--black);
   margin-top: 8rem;
-  border: 1px solid black;
+  border: 1px solid var(--black);
+  margin-top: 5rem;
+
   /* margin-left: 5%;
   margin-right: 5%; */
 }
@@ -171,8 +172,20 @@
   margin: 5%;
 }
 
-.poster-part h2{
-  text-align: center;
+#poster-part h5{
+  margin-top: 2%;
+  margin-left: 5%;
+}
+
+#poster-part h1{
+  margin-left: 5%;
+  background: linear-gradient(to right, var(--pink) 0%, white 100%);
+  background-size: 300%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: fontColorChange 4s linear infinite;
+  font-size: 35px;
+  text-align: left;
 }
 
 .poster-part-one{
@@ -196,6 +209,7 @@
 
 .poster-part-one-right{
   width: 50%;
+  margin-bottom: 3%;
 }
 
 .poster-part-one-right p{
@@ -273,8 +287,8 @@
 }
 
 @media only screen and (max-width:580px){
-  .web-part h2{
-    font-size: 22px;
+  #web-part h1{
+    font-size: 30px;
   }
 }
 
@@ -314,25 +328,4 @@
     margin-top: 1.5rem;
     width: 70%;
   }
-}
-
-/* animation */
-.web-part-one-left {
-  display: inline-block;
-  margin: 0 0.5rem;
-
-  animation: fadeIn; /* referring directly to the animation's @keyframe declaration */
-  animation-duration: 3s; /* don't forget to set a duration! */
-}
-
-@-webkit-keyframes fadeIn {
-	0% {
-		opacity: 0;
-	}
-	20% {
-		opacity: 0;
-	}
-	100% {
-		opacity: 1;
-	}
 }
