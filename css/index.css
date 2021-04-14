@@ -95,7 +95,13 @@
 
 .header-info-icon-all img{
   width:30px;
+  transition: transform 0.3s;
   text-align: center;
+}
+
+.header-info-icon-all img:hover{
+  transform: scale(1.2);
+  cursor: pointer;
 }
 
 .about-me h5:hover{
@@ -128,16 +134,16 @@
   width:50%;
 }
 
-.intro-left-text{
+#intro-left-text{
   margin-left: 22%;
   margin-right: 22%;
 }
 
-.intro-left-text h3, .intro-right-text h3{
+#intro-left-text h3, #intro-right-text h3{
   font-size: 25px;
 }
 
-.intro-left-text p{
+#intro-left-text p{
   margin-top: 2rem;
   line-height: 30px;
 }
@@ -390,7 +396,7 @@
 }
 
 @media only screen and (max-width:1000px){
-  .intro-left-text h3, .intro-right-text h3{
+  #intro-left-text h3, #intro-right-text h3{
     font-size: 20px;
   }
 }
@@ -410,7 +416,7 @@
     width: 80%;
   }
 
-  .intro-left-text{
+  #intro-left-text{
     margin-left: 10%;
     margin-right: 10%;
   }
