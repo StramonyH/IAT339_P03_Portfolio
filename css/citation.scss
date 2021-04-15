@@ -1,0 +1,39 @@
+$white:#FFF;
+$pink:#EFB2B2;
+$yellow:#F2BD56;
+
+.citations {
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-top: 5%;
+  h1 {
+    background: linear-gradient(to right, $pink 0%, $white 100%);
+    background-size: 300%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: fontColorChange 4s linear infinite;
+    font-size: 35px;
+  }
+}
+@keyframes {
+  fontColorChange {
+    100%{
+    background-position: 300%;
+  }
+}
+} {
+  .citations {
+    h3 {
+      margin-top: 2rem;
+    }
+  }
+}
+ul {
+  li {
+    margin-top: 1rem;
+    color: $pink;
+  }
+}
+a {
+  color: $yellow;
+}

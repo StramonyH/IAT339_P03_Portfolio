@@ -1,0 +1,345 @@
+$white:#FFF;
+$black:#000;
+$pink:#EFB2B2;
+
+#web-part {
+  margin-top: 5rem;
+  margin-left: 5%;
+  margin-right: 5%;
+  h1 {
+    background: linear-gradient(to right, $pink 0%, $white 100%);
+    background-size: 300%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: fontColorChange 4s linear infinite;
+    font-size: 35px;
+    text-align: left;
+  }
+}
+@keyframes {
+  fontColorChange {
+    100%{
+    background-position: 300%;
+    100%{
+    background-position: 300%;
+  }
+}
+} {
+  .web-part {
+    h2 {
+      margin-top: 1.5rem;
+      text-align: center;
+    }
+  }
+  @media {
+    only {
+      screen {
+        and {
+          (max-width {
+            &:980px) {
+              .indicate{
+    height: 60%;
+            }
+            &:580px) {
+              #web-part h1{
+    font-size: 30px;
+              #poster-part h1{
+    font-size: 30px;
+            }
+            &:400px) {
+              #web-part h1{
+    font-size: 27px;
+              #game-part h1{
+    font-size: 27px;
+            }
+          }
+        }
+      }
+    }
+  }
+  /* game design */
+  .game-part-one {
+    margin-top: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+.web-part-one {
+  margin-top: 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.web-part-one-left {
+  position: relative;
+  height: 40vh;
+  width: 35%;
+  text-align: right;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 55vw;
+  width: 100%;
+}
+.web-part-one-right {
+  width: 50%;
+  width: 100%;
+  p {
+    line-height: 25px;
+    line-height: 25px;
+  }
+  h3 {
+    margin-top: 2rem;
+    margin-top: 2rem;
+    font-size: 18px;
+  }
+}
+.web3 {
+  height: auto;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  display: none;
+  text-align: center;
+  width: 100%;
+  img {
+    width: 100%;
+  }
+}
+.indicate {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  text-align: center;
+  height: 100%;
+}
+@media {
+  only {
+    screen {
+      and {
+        (max-width {
+          &:1200px) {
+            .indicate{
+    height: 80%;
+          }
+          &:850px) {
+            .web-part-one{
+    display: flex;
+            justify-content: space-evenly;
+            flex-wrap: wrap;
+            .game-part-one{
+    display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+          }
+        }
+      }
+    }
+  }
+}
+}
+#previous,#next {
+  color: $black;
+  font-size: 22px;
+}
+.web-part-two {
+  margin-top: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row-reverse;
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+  margin-top: 4rem;
+}
+.web-part-two-right {
+  width: 50%;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+.web-part-two-left {
+  width: 50%;
+  width: 100%;
+  h3 {
+    margin-top: 2rem;
+    margin-top: 3rem;
+  }
+  p {
+    line-height: 25px;
+    width: 100%;
+  }
+}
+.web1, .web2 {
+  width: 40%;
+}
+.web1 img, .web2 img {
+  width: 100%;
+}
+.web1 img:hover, .web2 img:hover {
+  transform: scale(1.12);
+  transition: .4s;
+}
+#poster-part {
+  background-color: $black;
+  margin-top: 8rem;
+  border: 1px solid $black;
+  margin-top: 5rem;
+  h5 {
+    margin-top: 2%;
+    margin-left: 5%;
+  }
+  h1 {
+    margin-left: 5%;
+    background: linear-gradient(to right, $pink 0%, $white 100%);
+    background-size: 300%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: fontColorChange 4s linear infinite;
+    font-size: 35px;
+    text-align: left;
+    font-size: 30px;
+    font-size: 27px;
+  }
+}
+.poster-section {
+  margin: 5%;
+  h2 {
+    margin-top: 1.5rem;
+    font-size: 20px;
+  }
+}
+.poster-part-one {
+  margin-top: 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+.poster-part-one-left {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+  img {
+    width: 45%;
+  }
+}
+.poster-part-one-right {
+  width: 50%;
+  margin-bottom: 3%;
+  width: 100%;
+  p {
+    line-height: 25px;
+  }
+  h3 {
+    margin-top: 2rem;
+    margin-top: 2rem;
+    font-size: 18px;
+  }
+}
+.web-part {
+  h2 {
+    font-size: 20px;
+  }
+}
+.web1 {
+  width: 70%;
+}
+.web2 {
+  margin-top: 1.5rem;
+  width: 70%;
+}
+#game-part {
+  margin-top: 5rem;
+  margin-left: 5%;
+  margin-right: 5%;
+  h1 {
+    background: linear-gradient(to right, $pink 0%, $white 100%);
+    background-size: 300%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: fontColorChange 4s linear infinite;
+    font-size: 35px;
+    text-align: left;
+  }
+}
+.game-part-one-left {
+  width: 40%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  img {
+    width: 100%;
+    width: 80%;
+  }
+}
+.game-part-one-right {
+  width: 50%;
+  margin-top: 3rem;
+  width: 100%;
+  p {
+    line-height: 25px;
+    line-height: 25px;
+  }
+  h3 {
+    margin-top: 2rem;
+    font-size: 18px;
+  }
+}
+.game-part-two {
+  margin-top: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row-reverse;
+  margin-top: 3rem;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row-reverse;
+  flex-wrap: wrap;
+}
+.game-part-two-right {
+  width: 40%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  img {
+    width: 100%;
+    width: 80%;
+  }
+}
+.game-part-two-left {
+  width: 50%;
+  margin-top: 3rem;
+  width: 100%;
+  h3 {
+    margin-top: 2rem;
+    font-size: 18px;
+  }
+  p {
+    line-height: 25px;
+  }
+}
+.game-part {
+  h2 {
+    font-size: 20px;
+  }
+}
