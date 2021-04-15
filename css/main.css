@@ -1,17 +1,3 @@
-:root {
-  --gray: #2B2B2D;
-  --pink: #EFB2B2;
-  --yellow:#F2BD56;
-  --fontP:#F3EAE0;
-  --lightpink:#EDD5D2;
-  --black:#000;
-  --white:#fff;
-  --lightgray:#373737;
-  --tangerine:#C08B81;
-  --orange:#feab3a;
-}
-
-
 * {
   box-sizing: border-box;
   margin: 0;

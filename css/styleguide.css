@@ -5,10 +5,8 @@
   --fontP:#F3EAE0;
   --lightpink:#EDD5D2;
   --black:#000;
-  --white:#fff;
   --lightgray:#373737;
   --tangerine:#C08B81;
-  --orange:#feab3a;
 }
 
 * {
@@ -23,7 +21,7 @@ body {
   font-family: 'Roboto Slab', serif;
   margin-left: 3%;
   margin-right: 3%;
-  background-color: var(--gray);
+  background-color: #2B2B2D;
 }
 
 /*Add space between section elements*/
@@ -35,40 +33,40 @@ section{
   padding-bottom: 2rem;
   border-top-width: 1px;
   border-top-style: solid;
-  border-top-color: var(--black);
+  border-top-color: #000;
 }
 
 h1{
   text-align: center;
   /* color: #F2BD56; */
-  color:var(--pink);
+  color:#EFB2B2;
 }
 
 h2 {
-  color: var(--pink);
+  color: #EFB2B2;
   font-family: 'Bree Serif', serif;
   font-family: 'Roboto Slab', serif;
   font-weight: bolder;
 }
 
 h3 {
-  color: var(--pink);
+  color: #EFB2B2;
   font-family: 'Bree Serif', serif;
   font-family: 'Roboto Slab', serif;
 }
 
 h4 {
-  color: var(--pink);
+  color: #EFB2B2;
   font-family: 'Bree Serif', serif;
   font-family: 'Roboto Slab', serif;
 }
 
 h5{
-  color: var(--yellow);
+  color: #F2BD56;
 }
 
 p {
-  color: var(--fontP);
+  color: #F3EAE0;
   font-family: 'Bree Serif', serif;
   font-family: 'Roboto Slab', serif;
   margin-top: 1rem;
@@ -98,7 +96,7 @@ code {
 .nav a {
   float: left;
   display: block;
-  color: var(--pink);
+  color: #EFB2B2;
   text-align: center;
   padding: 0.8rem;
   text-decoration: none;
@@ -107,13 +105,13 @@ code {
 }
 
 .nav a:hover {
-  color:var(--fontP);
-  border-bottom: var(--lightpink) solid 2px;
+  color:#F3EAE0;
+  border-bottom: #EDD5D2 solid 2px;
   transition: .5s ease;
 }
 
 .nav a:focus {
-  color: var(--pink);
+  color: #EFB2B2;
 }
 
 /*
@@ -122,21 +120,21 @@ code {
 
 /*In-text section elements*/
 a{
-  color: var(--yellow);
+  color: #F2BD56;
   text-decoration: none;
   font-size: 14px;
   font-weight: bolder;
 }
 
 a.intext:hover{
-  color: var(--fontP);
-  border-bottom: var(--lightpink) solid 2px;
+  color: #F3EAE0;
+  border-bottom: #EDD5D2 solid 2px;
   transition: .5s ease;
   font-weight:bolder;
 }
 
 a.intext:focus{
-  color: var(--yellow);
+  color: #F2BD56;
 }
 
 /*Navigation link elements*/
@@ -147,7 +145,7 @@ a.intext:focus{
 .navigationBar a {
   float: left;
   display: block;
-  color: var(--pink);
+  color: #EFB2B2;
   text-align: center;
   padding: 0.8rem;
   text-decoration: none;
@@ -156,19 +154,19 @@ a.intext:focus{
 }
 
 .navigationBar a:hover {
-  color:var(--fontP);
-  border-bottom: var(--lightpink) solid 2px;
+  color:#F3EAE0;
+  border-bottom: #EDD5D2 solid 2px;
   transition: .5s ease;
 }
 
 .navigationBar a:focus {
-  color: var(--pink);;
+  color: #EFB2B2;
 }
 
 /*subimit/reset button*/
 .submit,.reset{
-  background-color: var(--pink);
-  color:var(--fontP);
+  background-color: #EFB2B2;
+  color:#F3EAE0;
   border: none;
   padding: 15px 32px;
   text-align: center;
@@ -182,11 +180,11 @@ a.intext:focus{
 }
 
 .reset:hover, .submit:hover{
-  background-color: var(--tangerine);
+  background-color: #C08B81;
 }
 
 .reset:focus, .submit:focus{
-  background-color: var(--pink);
+  background-color: #EFB2B2;
 }
 
 @-webkit-keyframes hvr-pulse-grow {
@@ -263,7 +261,7 @@ a.intext:focus{
 input[type=text], select, textarea {
   width: 100%;
   padding: 12px;
-  border: 1px solid var(--pink);
+  border: 1px solid #EFB2B2;
   border-radius: 4px;
   box-sizing: border-box;
   margin-top: 6px;
@@ -289,7 +287,7 @@ input[type=submit]:hover {
 }
 
 label{
-  color: var(--pink);
+  color: #EFB2B2;
 }
 
 
@@ -298,7 +296,7 @@ label.design {
   display: block;
   position: relative;
   font-weight: bolder;
-  color: var(--fontP);
+  color: #F3EAE0;
   padding-left: 1.5rem;
   margin-bottom: 1.5rem;;
   cursor: pointer;
@@ -321,16 +319,16 @@ span.design {
   left: 0;
   height: 15px;
   width: 15px;
-  background-color: var(--lightgray);
+  background-color: #373737;
   border-radius: 50%;
 }
 
 label.design:hover input ~ span.design {
-  background-color: var(--tangerine);
+  background-color: #C08B81;
 }
 
 label.design input:checked ~ span.design {
-  background-color: var(--tangerine);
+  background-color: #C08B81;
 }
 
 span.design:after {
@@ -424,7 +422,7 @@ ul li{
   float: left;
   padding: 0.8rem;
   display: block;
-  color: var(--pink);
+  color: #EFB2B2;
   text-align: center;
   text-decoration: none;
   font-size: 18px;
@@ -432,17 +430,17 @@ ul li{
 }
 
 .main_navigation a:hover {
-  color: var(--fontP);
-  border-bottom: var(--lightpink) solid 3px;
+  color: #F3EAE0;
+  border-bottom: #EDD5D2 solid 3px;
   transition: .5s ease;
 }
 
 .main_navigation a:focus {
-  color: var(--pink);
+  color: #EFB2B2;
 }
 
 #citations ul li{
-  color: var(--fontP);
+  color: #F3EAE0;
 }
 
 .add-btn{
@@ -451,7 +449,7 @@ ul li{
 }
 
 .add-btn a{
-  background-color: var(--pink);
+  background-color: #EFB2B2;
   color: white;
   border: none;
   padding: 10px 20px;
@@ -466,11 +464,11 @@ ul li{
 }
 
 .add-btn a:hover{
-  background-color: var(--tangerine);
+  background-color: #C08B81;
 }
 
 .add-btn a:focus{
-  background-color: var(--pink);
+  background-color: #EFB2B2;
 }
 
 /* Assemble Brand Font */
@@ -547,14 +545,14 @@ ul li{
 }
 
 .intro-num-right p{
-  color: var(--fontP);
+  color: #F3EAE0;
 
 }
 
 .intro-num-left h2{
   text-align: center;
   font-size: 50px;
-  color: var(--yellow);
+  color: #F2BD56;
 }
 
 .intro-right-text-p{
@@ -589,7 +587,7 @@ ul li{
 }
 
 .website, .poster, .game{
-  background-color: var(--lightgray);
+  background-color: #373737;
   width: 230px;
   margin: 2rem;
   display: flex;
@@ -615,21 +613,21 @@ ul li{
 
 .website-font h3, .poster-font h3, .game-font h3{
   text-align: left;
-  color: var(--fontP);
+  color: #F3EAE0;
 }
 
 .website:hover, .poster:hover, .game:hover{
-    background-color: var(--tangerine);
+    background-color: #C08B81;
     transition: 0.5s;
 }
 
 .design-h3 h3{
-  color:var(--fontP);
+  color:#F3EAE0;
 }
 
 .design-h3 p{
   text-align: left;
-  color: var(--yellow);
+  color: #F2BD56;
 }
 
 .black{
@@ -641,7 +639,7 @@ ul li{
   margin-top: -11rem;
   width: 100%;
   height: 40vh;
-  background-color: var(--black);
+  background-color: #000;
 }
 
 @media only screen and (max-width:1000px){
