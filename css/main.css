@@ -11,6 +11,7 @@
   --orange:#feab3a;
 }
 
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -23,7 +24,7 @@ body {
   font-family: 'Roboto Slab', serif;
   margin: 0px;
   padding: 0px;
-  background-color: var(--gray);
+  background-color: #2B2B2D;
 }
 
 /*Add space between section elements*/
@@ -33,34 +34,34 @@ section{
 
 h1{
   text-align: center;
-  color:var(--pink);
+  color:#EFB2B2;
 }
 
 h2 {
-  color: var(--pink);
+  color: #EFB2B2;
   font-family: 'Bree Serif', serif;
   font-family: 'Roboto Slab', serif;
   font-weight: bolder;
 }
 
 h3 {
-  color: var(--pink);
+  color: #EFB2B2;
   font-family: 'Bree Serif', serif;
   font-family: 'Roboto Slab', serif;
 }
 
 h4 {
-  color: var(--pink);
+  color: #EFB2B2;
   font-family: 'Bree Serif', serif;
   font-family: 'Roboto Slab', serif;
 }
 
 h5{
-  color: var(--yellow);
+  color: #F2BD56;
 }
 
 p {
-  color: var(--fontP);
+  color: #F3EAE0;
   font-family: 'Bree Serif', serif;
   font-family: 'Roboto Slab', serif;
   margin-top: 1rem;
@@ -144,7 +145,7 @@ a{
 
 .navigation ul a{
   display: block;
-  color: var(--pink);
+  color: #EFB2B2;
   text-align: center;
   text-decoration: none;
   font-size: 18px;
@@ -152,13 +153,13 @@ a{
 }
 
 .navigation ul a:hover{
-  color: var(--fontP);
-  border-bottom: var(--lightpink) solid 3px;
+  color: #F3EAE0;
+  border-bottom: #EDD5D2 solid 3px;
   transition: .5s ease;
 }
 
 .navigation ul a:focus{
-  color: var(--pink);
+  color: #EFB2B2;
 }
 
 .navigation #menu{
@@ -228,7 +229,7 @@ a{
 }
 
 .footer-left-bottom-text p{
-  color:var(--fontP);
+  color:#F3EAE0;
   font-size: 10px;
   margin: auto;
 }
@@ -246,7 +247,7 @@ a{
 
 
 .footer-center p{
-  color:var(--fontP);
+  color:#F3EAE0;
   font-size: 15px;
   font-weight: normal;
 }
@@ -257,7 +258,7 @@ a{
 }
 
 .support-content p{
-    color:var(--black);
+    color:#000;
     font-size: 14px;
     font-weight: normal;
 }
@@ -269,7 +270,7 @@ a{
 }
 
 .footer-right p{
-  color:var(--fontP);
+  color:#F3EAE0;
   font-size: 18px;
   font-weight: normal;
 }
@@ -280,7 +281,7 @@ a{
 }
 
 .export-content p{
-  color:var(--fontP);
+  color:#F3EAE0;
   font-size: 14px;
   font-weight: normal;
 }
@@ -289,12 +290,12 @@ a{
   width: 100%;
   border-top-width: 0.1rem;
   border-top-style: solid;
-  border-top-color: var(--pink);
+  border-top-color: #EFB2B2;
 }
 
 .copyright p{
   text-align: center;
-  color: var(--fontP);
+  color: #F3EAE0;
 }
 
 /* meun */
@@ -312,7 +313,7 @@ a{
 
     .navigation ul{
       flex-direction: column;
-      background-color: var(--gray);
+      background-color: #2B2B2D;
       margin-top: 0.5rem;
     }
 
@@ -322,7 +323,7 @@ a{
     }
 
     .navigation ul li:hover{
-      background-color:var(--black);
+      background-color:#000;
     }
 
     /* .navigation ul a:hover{

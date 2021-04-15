@@ -1,5 +1,4 @@
 .head{
-  /* border: 1px solid pink; */
   min-height: 100vh;
 }
 
@@ -57,11 +56,11 @@
 }
 
 .about-me a{
-  color: var(--yellow);
+  color: #F2BD56;
 }
 
 .line{
-  background-color: var(--yellow);
+  background-color: #F2BD56;
   width: 100px;
   height: 10px;
 }
@@ -105,12 +104,12 @@
 }
 
 .about-me h5:hover{
-  color: var(--pink);
+  color: #EFB2B2;
   transition: .5s ease;
 }
 
 .about-me h5:focus{
-  color: var(--yellow);
+  color: #F2BD56;
 }
 
 /* about me */
@@ -178,14 +177,14 @@
 }
 
 .intro-num-right p{
-  color: var(--fontP);
+  color: #F3EAE0;
 
 }
 
 .intro-num-left h1{
   text-align: center;
   font-size: 40px;
-  color: var(--yellow);
+  color: #F2BD56;
 }
 
 .intro-right-text-p{
@@ -220,7 +219,7 @@
 }
 
 .website, .poster, .game{
-  background-color: var(--lightgray);
+  background-color: #373737;
   width: 230px;
   margin: 2rem;
   display: flex;
@@ -246,21 +245,21 @@
 
 .website-font h3, .poster-font h3, .game-font h3{
   text-align: left;
-  color: var(--fontP);
+  color: #F3EAE0;
 }
 
 .website:hover, .poster:hover, .game:hover{
-    background-color: var(--tangerine);
+    background-color: #C08B81;
     transition: 0.5s;
 }
 
 .design-h3 h3{
-  color:var(--fontP);
+  color:#F3EAE0;
 }
 
 .design-h3 p{
   text-align: left;
-  color: var(--yellow);
+  color: #F2BD56;
 }
 
 .black{
@@ -272,7 +271,7 @@
   margin-top: -11rem;
   width: 100%;
   height: 40vh;
-  background-color: var(--black);
+  background-color: #000;
 }
 
 .footer{
@@ -468,7 +467,7 @@
   position: relative;
   top: 50px;
   margin: auto;
-  border: 5px solid var(--white);
+  border: 5px solid #FFF;
   border-right: none;
   border-top: none;
 
@@ -514,12 +513,12 @@
 
 @-webkit-keyframes hue {
     0%{
-        color: var(--pink);
+        color: #EFB2B2;
     }
     50% {
-        color: var(--orange);
+        color: #feab3a;
     }
     100%{
-        color: var(--pink);
+        color: #EFB2B2;
     }
 }

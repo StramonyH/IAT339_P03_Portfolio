@@ -1,6 +1,4 @@
-*{
-  border: 1px solid pink;
-}
+
 #web-part{
   margin-top: 5rem;
   margin-left: 5%;
@@ -8,7 +6,7 @@
 }
 
 #web-part h1{
-  background: linear-gradient(to right, var(--pink) 0%, white 100%);
+  background: linear-gradient(to right, #EFB2B2 0%, #FFF 100%);
   background-size: 300%;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -88,7 +86,7 @@
 
 
 #previous,#next{
-  color:var(--black);
+  color:#000;
   font-size: 22px;
 }
 
@@ -154,9 +152,9 @@
 }
 
 #poster-part{
-  background-color: var(--black);
+  background-color: #000;
   margin-top: 8rem;
-  border: 1px solid var(--black);
+  border: 1px solid #000;
   margin-top: 5rem;
 
   /* margin-left: 5%;
@@ -174,7 +172,7 @@
 
 #poster-part h1{
   margin-left: 5%;
-  background: linear-gradient(to right, var(--pink) 0%, white 100%);
+  background: linear-gradient(to right, #EFB2B2 0%, #FFF 100%);
   background-size: 300%;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -345,7 +343,7 @@
 }
 
 #game-part h1{
-  background: linear-gradient(to right, var(--pink) 0%, white 100%);
+  background: linear-gradient(to right, #EFB2B2 0%, #FFF 100%);
   background-size: 300%;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;

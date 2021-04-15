@@ -5,7 +5,7 @@
 }
 
 .citations h1{
-  background: linear-gradient(to right, var(--pink) 0%, white 100%);
+  background: linear-gradient(to right, #EFB2B2 0%, #FFF 100%);
   background-size: 300%;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -22,9 +22,9 @@
 
 ul li{
   margin-top: 1rem;
-  color: var(--pink);
+  color: #EFB2B2;
 }
 
 a{
-  color: var(--yellow);
+  color: #F2BD56;
 }
