@@ -94,6 +94,7 @@
 
 .header-info-icon-all img{
   width:30px;
+  height: 30px;
   transition: transform 0.3s;
   text-align: center;
 }
